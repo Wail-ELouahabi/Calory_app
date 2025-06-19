@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.App {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.calory-summary {
+  margin-bottom: 20px;
+}
+
+progress {
+  width: 100%;
+  height: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+  appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #00b894;
+  border-radius: 10px;
+}
+
+.scan-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #00b894;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background 0.3s ease;
+}
+
+.scan-button:hover {
+  background: #019875;
+}
+
+.nutrition-info {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.nutri-item {
+  margin-bottom: 15px;
+}
+
+.nutri-item label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.product-info,
+.spoonacular-info {
+  margin-top: 2rem;
+}
+
+.product-info img,
+.spoonacular-info img {
+  width: 120px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.history {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.history ul {
+  list-style: none;
+  padding: 0;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.history-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.filters {
+  margin: 1rem 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.filters button {
+  padding: 6px 10px;
+  background: #dfe6e9;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filters button:hover {
+  background: #b2bec3;
+}
+
+video {
+  width: 90%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background: #000;
+}
+
+
+.ScannerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+@media (max-width: 480px) {
+  .App {
+    padding: 1rem;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .scan-button {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .ScannerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .ScannerContainer video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    background: #000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+
+  .ScannerContainer button {
+    margin-top: 12px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+  }
+}
+
